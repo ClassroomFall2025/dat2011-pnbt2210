@@ -11,33 +11,33 @@ def tinh_tien_nuoc(so_nuoc):
                      (so_nuoc - 30) * gia_ban_nuoc[3])
     return tien_nuoc
 
-# print("Nhập số nước sử dụng (m3): ", end="")
+# print("Nhap so nuoc su dung (m3): ", end="")
 # so_nuoc = float(input())
 # print(so_nuoc, "m3")
-# print("Số tiền nước phải trả: ", tinh_tien_nuoc(so_nuoc), "VND")
+# print("So tien nuoc phai tra: ", tinh_tien_nuoc(so_nuoc), "VND")
 
 
 # Tinh nguyen lieu lam banh.
 def tinh_nguyen_lieu(sl_bdx, sl_btc, sl_bd):
-    banh_dau_xanh = {"đường": 0.04, "đậu": 0.07}
-    banh_thap_cam = {"đường": 0.06, "đậu": 0}
-    banh_deo = {"đường": 0.05, "đậu": 0.02}
+    banh_dau_xanh = {"duong": 0.04, "dau": 0.07}
+    banh_thap_cam = {"duong": 0.06, "dau": 0}
+    banh_deo = {"duong": 0.05, "dau": 0.02}
     nguyen_lieu = {}
 
-    dau_hop_banh = sl_bdx * banh_dau_xanh["đậu"] + sl_btc * banh_thap_cam["đậu"] + sl_bd * banh_deo["đậu"]
-    duong_hop_banh = sl_bdx * banh_dau_xanh["đường"] + sl_btc * banh_thap_cam["đường"] + sl_bd * banh_deo["đường"]
+    dau_hop_banh = sl_bdx * banh_dau_xanh["dau"] + sl_btc * banh_thap_cam["dau"] + sl_bd * banh_deo["dau"]
+    duong_hop_banh = sl_bdx * banh_dau_xanh["duong"] + sl_btc * banh_thap_cam["duong"] + sl_bd * banh_deo["duong"]
 
-    nguyen_lieu["đường"] = duong_hop_banh
-    nguyen_lieu["đậu"] = dau_hop_banh
+    nguyen_lieu["duong"] = duong_hop_banh
+    nguyen_lieu["dau"] = dau_hop_banh
     return nguyen_lieu
 
-# print("Nhập số lượng bánh đậu xanh:",  end="")
+# print("Nhap so luong banh dau xanh:",  end="")
 # sl_bdx = int(input())
-# print("\n Nhập số lượng bánh thập cẩm: ", end="")
+# print("\n Nhap so luong banh thap cam: ", end="")
 # sl_btc = int(input())
-# print("\n Nhập số lượng bánh dẻo: ", end="")
+# print("\n Nhap so luong banh deo: ", end="")
 # sl_bd = int(input())
 
 # nguyen_lieu = tinh_nguyen_lieu(sl_bdx, sl_btc, sl_bd)
-# print("\n Số lượng đường cần dùng: ", nguyen_lieu["đường"], "kg")
-# print("Số lượng đậu cần dùng: ", nguyen_lieu["đậu"], "kg")
+# print("\n So luong duong can dung: ", nguyen_lieu["duong"], "kg")
+# print("So luong dau can dung: ", nguyen_lieu["dau"], "kg")
