@@ -17,7 +17,7 @@ def tinh_tien_nuoc(so_nuoc):
 # print("Số tiền nước phải trả: ", tinh_tien_nuoc(so_nuoc), "VND")
 
 
-# Tinh nguyen lieu lam banh
+# Tinh nguyen lieu lam banh.
 def tinh_nguyen_lieu(sl_bdx, sl_btc, sl_bd):
     banh_dau_xanh = {"đường": 0.04, "đậu": 0.07}
     banh_thap_cam = {"đường": 0.06, "đậu": 0}
